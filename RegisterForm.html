@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+           <title>Register form</title>
+</head>
+<style>
+p
+{
+border:5px solid gray
+}
+</style>
+
+<p>
+<body>
+<center>
+<body style="background-color:powderblue;">
+<form>
+         <table>
+      <tr>
+         <td>
+                  Name:
+        </td>
+        <td>
+               <input type="text"  placeholder="Name"  Id="n">
+       </td>
+       </tr>
+       <tr>
+      <td>
+              Password :
+     </td>
+     <td>
+              <input type="Password" placeholder="password" Id="p">
+     </td>
+     </tr>
+     <tr>
+    <td>
+             Gender:
+     </td>
+     <td>
+            <input type="radio" name="Gender">Male
+           <input type="radio" name="Gender">Female
+     </td>
+     </tr>
+      <tr>
+      <td>
+               Email:
+     </td>
+     <td>
+              <input type="mail" placeholder="Email"  Id="e">
+      </td>
+      </tr>
+       <tr>
+       <td>
+                Phone Number:
+      </td>
+      <td>
+              <input type="phone" placeholder="Number" Id="ph">
+     </td>
+     </tr>
+     <tr>
+     <td>
+             <script>
+function myFunction() {
+var x, y,text;
+x = document.getElementById("n").value;
+y = document.getElementById("p").value;
+z = document.getElementById("e").value;
+v=document.getElementById("ph").value;
+if (x==""|| y=="" ||e==""||v=="") {
+text = alert('Input not valid');
+} else {
+text = alert("Name:-"+x+"\n"+y+"\n"+z+"\n"+v);
+}
+}
+</script>
+
+          <button type="button" onclick="myFunction()">Submit</button>
+  </td>
+  </tr>
+</table>
+
+
+</form>
+
+</center>
+</body>
+</p>
+</html>
